@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    
+    <!-- App Theme Colors -->
+    <color name="background_dark">#0D1117</color>
+    <color name="accent_green">#4CAF50</color>
+    <color name="warning_yellow">#FFC107</color>
+    <color name="danger_red">#F44336</color>
+    <color name="primary_blue">#2196F3</color>
+    <color name="surface_dark">#161B22</color>
+    
+    <!-- Cell Colors -->
+    <color name="cell_default">#64C864</color>
+    <color name="cell_predator">#C86464</color>
+    <color name="cell_herbivore">#64C8C8</color>
+    <color name="cell_colony">#C864C8</color>
+    
+    <!-- UI Colors -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#B0B0B0</color>
+    <color name="divider">#303030</color>
+</resources>

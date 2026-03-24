@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Theme.MicrobeSim" parent="Theme.Material3.Dark.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/accent_green</item>
+        <item name="colorPrimaryVariant">@color/accent_green</item>
+        <item name="colorOnPrimary">@color/white</item>
+        
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/primary_blue</item>
+        <item name="colorSecondaryVariant">@color/primary_blue</item>
+        <item name="colorOnSecondary">@color/black</item>
+        
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">@color/background_dark</item>
+        <item name="android:navigationBarColor">@color/background_dark</item>
+        
+        <!-- Background -->
+        <item name="android:windowBackground">@color/background_dark</item>
+        <item name="backgroundColor">@color/background_dark</item>
+    </style>
+    
+    <!-- Button style -->
+    <style name="Widget.MicrobeSim.Button" parent="Widget.Material3.Button">
+        <item name="backgroundTint">@color/accent_green</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="cornerRadius">8dp</item>
+    </style>
+    
+    <!-- Card style -->
+    <style name="Widget.MicrobeSim.Card" parent="Widget.Material3.CardView.Filled">
+        <item name="cardBackgroundColor">@color/surface_dark</item>
+        <item name="cardCornerRadius">12dp</item>
+    </style>
+</resources>

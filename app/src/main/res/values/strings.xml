@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MicrobeSim</string>
+    
+    <!-- Main Menu -->
+    <string name="menu_play">Играть</string>
+    <string name="menu_editor">Редактор</string>
+    <string name="menu_campaign">Кампания</string>
+    <string name="menu_settings">Настройки</string>
+    <string name="menu_exit">Выход</string>
+    
+    <!-- Simulation -->
+    <string name="sim_pause">Пауза</string>
+    <string name="sim_resume">Продолжить</string>
+    <string name="sim_reset">Сброс</string>
+    <string name="sim_add_cells">Добавить клетки</string>
+    <string name="sim_speed">Скорость: %1$dx</string>
+    
+    <!-- Genome Editor -->
+    <string name="editor_title">Редактор Генома</string>
+    <string name="editor_save">Сохранить</string>
+    <string name="editor_load">Загрузить</string>
+    <string name="editor_new">Новый</string>
+    <string name="editor_add_gene">Добавить ген</string>
+    <string name="editor_remove_gene">Удалить ген</string>
+    <string name="editor_preview">Предпросмотр</string>
+    <string name="editor_dsl_mode">DSL режим</string>
+    <string name="editor_json_mode">JSON режим</string>
+    <string name="editor_visual_mode">Визуальный режим</string>
+    
+    <!-- Gene Types -->
+    <string name="gene_move_random">Случайное движение</string>
+    <string name="gene_move_toward_nutrient">Движение к питанию</string>
+    <string name="gene_move_away_predator">Избегание хищников</string>
+    <string name="gene_move_toward_light">Фототаксис</string>
+    <string name="gene_metabolism_fast">Быстрый метаболизм</string>
+    <string name="gene_metabolism_efficient">Эффективный метаболизм</string>
+    <string name="gene_photosynthesis">Фотосинтез</string>
+    <string name="gene_divide_asexual">Бесполое деление</string>
+    <string name="gene_produce_toxin">Производство яда</string>
+    <string name="gene_form_colony">Образование колоний</string>
+    
+    <!-- Campaign Levels -->
+    <string name="campaign_level_1">Уровень 1: Выживание</string>
+    <string name="campaign_level_2">Уровень 2: Рост популяции</string>
+    <string name="campaign_level_3">Уровень 3: Эволюция хищника</string>
+    <string name="campaign_level_4">Уровень 4: Создание колонии</string>
+    <string name="campaign_level_5">Уровень 5: Доминирование</string>
+    
+    <!-- Settings -->
+    <string name="settings_graphics">Графика</string>
+    <string name="settings_sound">Звук</string>
+    <string name="settings_quality_low">Низкое</string>
+    <string name="settings_quality_balanced">Сбалансированное</string>
+    <string name="settings_quality_high">Высокое</string>
+    <string name="settings_show_grid">Показать сетку</string>
+    <string name="settings_show_energy">Показать энергию</string>
+    
+    <!-- Notifications -->
+    <string name="notify_cell_death">Клетка погибла</string>
+    <string name="notify_division">Деление клетки!</string>
+    <string name="notify_extinction">Все клетки вымерли</string>
+    <string name="notify_goal_complete">Цель достигнута!</string>
+    
+    <!-- Errors -->
+    <string name="error_genome_invalid">Некорректный геном</string>
+    <string name="error_save_failed">Ошибка сохранения</string>
+    <string name="error_load_failed">Ошибка загрузки</string>
+</resources>
