@@ -1,34 +1,59 @@
 ```
-# Compiled and build artifacts
-*.class
-*.o
-*.obj
-*.out
+# Gradle
+.gradle/
 build/
-target/
+!gradle/wrapper/gradle-wrapper.jar
+!gradlew
+!gradlew.bat
+
+# Android
+*.apk
+*.ap_
+*.aab
+local.properties
+captures/
 
 # Dependencies
-.gradle/
 node_modules/
-venv/
 .venv/
+venv/
 __pycache__/
+*.egg-info/
+dist/
+target/
 
-# Logs and temp files
+# Logs
 *.log
-*.tmp
-*.swp
 
 # Environment
 .env
 .env.local
-*.env.*
+.env.*
 
 # Editors
 .vscode/
 .idea/
+*.swp
+*.swo
+*.tmp
 
 # OS
 .DS_Store
 Thumbs.db
+
+# Coverage
+coverage/
+htmlcov/
+.coverage
+
+# Compressed
+*.zip
+*.gz
+*.tar
+*.tgz
+*.bz2
+*.xz
+*.7z
+*.rar
+*.zst
 ```
