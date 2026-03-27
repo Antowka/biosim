@@ -1,7 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    kotlin("plugin.serialization") version "1.9.22"
+    kotlin("plugin.serialization") version "2.1.0"
 }
 
 android {
@@ -53,13 +53,14 @@ dependencies {
     // Room Database
     implementation("androidx.room:room-runtime:2.6.1")
     implementation("androidx.room:room-ktx:2.6.1")
+    implementation("androidx.compose.remote:remote-creation-core:1.0.0-alpha07")
     annotationProcessor("androidx.room:room-compiler:2.6.1")
     
     // Coroutines for async operations
-    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.8.0")
     
     // JSON parsing for genome scripting
-    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.2")
+    implementation("org.jetbrains.kotlinx:kotlinx-serialization-json:1.6.3")
     
     // Unit testing
     testImplementation("junit:junit:4.13.2")

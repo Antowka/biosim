@@ -124,8 +124,8 @@ data class Cell(
                         .filter { it.id != id && it.isAlive }
                     
                     if (neighbors.isNotEmpty()) {
-                        val centerX = neighbors.average { it.positionX }.toFloat()
-                        val centerY = neighbors.average { it.positionY }.toFloat()
+                        val centerX = neighbors.map { it.positionX }.average().toFloat()
+                        val centerY = neighbors.map { it.positionY }.average().toFloat()
                         val dx = centerX - positionX
                         val dy = centerY - positionY
                         val dist = kotlin.math.sqrt(dx * dx + dy * dy)
