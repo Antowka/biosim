@@ -1,32 +1,78 @@
-```
-# Build artifacts
-build/
-*.jar
-*.war
+# Compiled and build artifacts
 *.class
-*.dex
+*.o
+*.obj
+*.exe
+*.dll
+*.so
+*.a
+*.out
+build/
+target/
 
 # Dependencies
-.gradle/
-node_modules/
-.libs/
+__pycache__/
+.mypy_cache/
+.pytest_cache/
+.coverage
+coverage/
+htmlcov/
 
-# IDE
-.idea/
-.vscode/
-*.iml
-*.ipr
-*.iws
-
-# Logs
+# Logs and temp files
 *.log
+*.tmp
+*.swp
+*.swo
 
 # Environment
 .env
 .env.local
 *.env.*
 
-# OS
+# Editors
+.vscode/
+.idea/
+
+# System files
 .DS_Store
 Thumbs.db
-```
+
+# Compressed files
+*.zip
+*.gz
+*.tar
+*.tgz
+*.bz2
+*.xz
+*.7z
+*.rar
+*.zst
+*.lz4
+*.lzh
+*.cab
+*.arj
+*.rpm
+*.deb
+*.Z
+*.lz
+*.lzo
+*.tar.gz
+*.tar.bz2
+*.tar.xz
+*.tar.zst
+
+# Gradle-specific
+.gradle/
+
+# Kotlin/Android specific
+*.kotlin_metadata
+*.class
+!*.kt
+!*.java
+
+# Ignore local build outputs but keep source files
+app/build/
+*.apk
+*.aar
+*.jar
+!app/src/main/java/**/*

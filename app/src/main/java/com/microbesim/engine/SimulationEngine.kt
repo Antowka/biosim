@@ -285,7 +285,8 @@ class SimulationEngine : SimulationContext {
      */
     override fun getNutrientConcentration(x: Float, y: Float): Float {
         val nearby = nutrientSpatialHash.getObjectsNearby(x, y, 50f)
-        return nearby.sumOf { (it.obj as? Nutrient)?.amount ?: 0f }.toFloat() / nearby.size.coerceAtLeast(1)
+        val total = nearby.sumOf { (it.obj as? Nutrient)?.amount ?: 0.0f }
+        return (total / nearby.size.coerceAtLeast(1)).toFloat()
     }
     
     /**
