@@ -364,7 +364,10 @@ class SimulationEngine : SimulationContext {
      */
     fun getStats(): SimulationStats {
         val aliveCells = cells.values.count { it.isAlive }
-        val avgGeneration = cells.values.filter { it.isAlive }.averageOrNull { it.generation.toDouble() } ?: 0.0
+        val avgGeneration = cells.values
+            .filter { it.isAlive }
+            .map { it.generation.toDouble() }
+            .average()
         val totalDivisions = cells.values.sumOf { it.divisionsCount }
         
         return SimulationStats(
