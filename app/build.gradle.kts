@@ -53,6 +53,7 @@ dependencies {
     // Room Database
     implementation("androidx.room:room-runtime:2.6.1")
     implementation("androidx.room:room-ktx:2.6.1")
+    implementation("androidx.compose.remote:remote-creation-core:1.0.0-alpha07")
     annotationProcessor("androidx.room:room-compiler:2.6.1")
     
     // Coroutines for async operations

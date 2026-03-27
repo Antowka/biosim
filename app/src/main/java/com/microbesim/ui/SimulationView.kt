@@ -10,6 +10,7 @@ import android.view.GestureDetector
 import android.view.MotionEvent
 import android.view.ScaleGestureDetector
 import android.view.View
+import androidx.compose.remote.creation.step
 import com.microbesim.engine.SimulationEngine
 import com.microbesim.models.Cell
 import com.microbesim.models.Nutrient
@@ -140,15 +141,20 @@ class SimulationView @JvmOverloads constructor(
         
         val startX = ((startWorld.first / gridSize).toInt() * gridSize)
         val startY = ((startWorld.second / gridSize).toInt() * gridSize)
-        
-        for (x in startX..endWorld.first.toInt() step gridSize.toInt()) {
-            val screenPos = worldToScreen(x.toFloat(), 0f)
+
+        var x = startX
+        while (x <= endWorld.first) {
+            val screenPos = worldToScreen(x, 0f)
             canvas.drawLine(screenPos.first, 0f, screenPos.first, height.toFloat(), gridPaint)
+            x += gridSize
         }
-        
-        for (y in startY..endWorld.second.toInt() step gridSize.toInt()) {
-            val screenPos = worldToScreen(0f, y.toFloat())
+
+        // Аналогично исправьте цикл для оси Y, если он есть:
+        var y = startY // Предполагается, что startY определен ранее
+        while (y <= endWorld.second) {
+            val screenPos = worldToScreen(0f, y)
             canvas.drawLine(0f, screenPos.second, width.toFloat(), screenPos.second, gridPaint)
+            y += gridSize
         }
     }
     
